@@ -31,3 +31,5 @@ python solar_analyzer.py
 - **dust_vs_energy.png:** Shows the effect of dust on energy production.
 
 > This project demonstrates data analysis and visualization skills applied to a real-world problem in sustainable energy.
+## Author
+Mohammed Alozeib

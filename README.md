@@ -2,6 +2,10 @@
 
 This project simulates a small solar panel station and analyzes daily energy output using Python.
 
+## Visualization Results
+![Energy Bar Chart](energy_bar_chart.png)
+![Dust vs Energy](dust_vs_energy.png)
+
 ## Project Features
 - Calculate average energy per solar panel.
 - Identify the panel with the highest and lowest energy output.

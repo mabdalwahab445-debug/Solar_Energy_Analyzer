@@ -21,22 +21,25 @@ print(f"\nHighest energy: {max_panel['Panel_ID']} → {max_panel['Daily_Energy_k
 min_panel = data.loc[data['Daily_Energy_kWh'].idxmin()]
 print(f"Lowest energy: {min_panel['Panel_ID']} → {min_panel['Daily_Energy_kWh']} kWh")
 
-# Plot: daily energy per panel
+# Visualization 1: Daily energy output per panel
 plt.figure(figsize=(8,5))
 plt.bar(data['Panel_ID'], data['Daily_Energy_kWh'], color='orange')
 plt.title("Daily Energy Output per Solar Panel")
-plt.xlabel("Panel")
+plt.xlabel("Panel ID")
 plt.ylabel("Energy (kWh)")
 plt.grid(axis='y')
-plt.savefig("energy_bar_chart.png")
+plt.savefig("energy_bar_chart.png") 
 plt.show()
 
-# Plot: effect of dust on energy
+# Visualization 2: Effect of dust on energy production
 plt.figure(figsize=(8,5))
 plt.scatter(data['Dust_Level_Percent'], data['Daily_Energy_kWh'], color='blue')
 plt.title("Effect of Dust on Energy Production")
 plt.xlabel("Dust Level (%)")
 plt.ylabel("Energy (kWh)")
 plt.grid(True)
-plt.savefig("dust_vs_energy.png")
+plt.savefig("dust_vs_energy.png") 
 plt.show()
+
+print("\nSuccess: Images 'energy_bar_chart.png' and 'dust_vs_energy.png' have been generated.")
+
